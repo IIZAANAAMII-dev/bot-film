@@ -26,7 +26,7 @@ const client = new Client({
 });
 
 // ID du salon où le bot est autorisé à fonctionner
-const ALLOWED_CHANNEL_ID = '1402430843485556869'; // Remplacez par l'ID de votre salon
+const ALLOWED_CHANNEL_ID = '1400848476425687132'; // Remplacez par l'ID de votre salon
 
 client.commands = new Collection();
 client.participants = new Map();

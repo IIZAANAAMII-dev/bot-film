@@ -2,21 +2,6 @@
 
 Un bot Discord puissant et bien organisé pour organiser des soirées cinéma avec Teleparty. Créé avec ❤️ par **IIZAANAAMII**.
 
-## 🏗️ Structure du projet
-
-```
-bot-film/
-├── src/
-│   ├── commands/        # Commandes slash
-│   ├── events/          # Gestionnaires d'événements
-│   ├── handlers/        # Gestionnaires divers
-│   ├── utils/           # Utilitaires
-│   └── config/          # Configuration
-├── .env                 # Variables d'environnement
-├── index.js             # Point d'entrée du bot
-└── package.json         # Dépendances et scripts
-```
-
 ## ✨ Fonctionnalités
 
 - Création de séances de visionnage avec la commande `/films`

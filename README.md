@@ -83,7 +83,7 @@ GUILD_ID=votre_serveur_id_ici
 ```
 
 ## 🛠️ Commandes disponibles
-
+scwcswc
 - `/film` - Crée une nouvelle séance de film
 
 ## 🎥 Utilisation

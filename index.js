@@ -220,14 +220,8 @@ client.on(Events.InteractionCreate, async (interaction) => {
           .setStyle(ButtonStyle.Success)
       );
       
-      // Trouver le salon de discussion approprié
-      const salon = interaction.guild.channels.cache.find(
-        channel => 
-          (channel.name.includes('soirees-cine') || 
-           channel.name.includes('général') || 
-           channel.name.includes('general')) &&
-          channel.type === 0 // Type 0 = salon textuel
-      ) || interaction.channel; // Fallback sur le salon actuel
+      // Toujours utiliser le salon actuel où la commande a été exécutée
+      const salon = interaction.channel;
 
       try {
         const message = await salon.send({ 

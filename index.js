@@ -496,6 +496,9 @@ client.on(Events.InteractionCreate, async (interaction) => {
 process.on('unhandledRejection', error => {
   console.error('Erreur non gérée :', error);
 });
+const token = process.env.DISCORD_TOKEN;
+console.log('Token récupéré :', token ? `${token.slice(0, 5)}...${token.slice(-5)}` : 'ABSENT');
+client.login(token)
 
 // Connexion du bot
 client.login(process.env.DISCORD_TOKEN)

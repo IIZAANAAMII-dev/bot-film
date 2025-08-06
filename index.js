@@ -13,6 +13,19 @@ import {
   Events, 
   Collection 
 } from 'discord.js';
+// server.js
+import express from 'express';
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('🟢 Ping réussi depuis Render !');
+});
+
+app.listen(PORT, () => {
+  console.log(`Serveur lancé sur le port ${PORT}`);
+});
 
 // Configuration du client Discord
 const client = new Client({ 
